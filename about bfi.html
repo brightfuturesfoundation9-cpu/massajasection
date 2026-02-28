@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Bright Futures Initiatives</title>
+    <style>
+        /* Shared Styles from Homepage */
+        :root {
+            --primary-blue: #2c3e50;
+            --accent-gold: #f1c40f;
+            --action-red: #e74c3c;
+            --light-gray: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Navigation (Matches Homepage) */
+        header {
+            background-color: var(--primary-blue);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo { color: white; font-size: 1.4rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; }
+        .nav-links { list-style: none; display: flex; gap: 25px; margin: 0; }
+        .nav-links a { color: #ecf0f1; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent-gold); }
+        .btn-donate { background-color: var(--action-red); padding: 8px 20px; border-radius: 50px; color: white !important; }
+
+        /* Page Specific Hero */
+        .page-header {
+            background: var(--primary-blue);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+        }
+
+        .vision-mission {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .box {
+            padding: 30px;
+            background: var(--light-gray);
+            border-left: 5px solid var(--accent-gold);
+        }
+
+        .leadership-section {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #ccc;
+        }
+
+        footer { background: #1a252f; color: #bdc3c7; text-align: center; padding: 30px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Bright Futures</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About BFI</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html" class="btn-donate">Donate Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>About Bright Futures Initiatives</h1>
+        <p>The Heart and Hands of Our Church Ministry</p>
+    </section>
+
+    <div class="container">
+        <div class="about-grid">
+            <div>
+                <h2>Our Story</h2>
+                <p>Founded in [Year], <strong>Bright Futures Initiatives (BFI)</strong> began as a small outreach program within our church congregation. We noticed that many families in our local community were struggling not just spiritually, but with basic access to food, education, and healthcare.</p>
+                <p>What started as a weekly bread distribution has grown into a structured foundation dedicated to sustainable community development. Today, we are a fully registered non-profit initiative driven by the belief that faith without works is dead.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1541976590-71394168159b?auto=format&fit=crop&w=600&q=80" alt="Church Outreach" style="width:100%; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+
+        <div class="vision-mission">
+            <div class="box">
+                <h3>Our Vision</h3>
+                <p>To see a community where every individual, regardless of their background, has the opportunity to thrive and live out their God-given potential in a dignified environment.</p>
+            </div>
+            <div class="box">
+                <h3>Our Mission</h3>
+                <p>To provide holistic support through education, health interventions, and spiritual mentorship, reflecting the love of Christ through practical service.</p>
+            </div>
+        </div>
+
+        <section class="leadership-section">
+            <h2>Meet Our Leadership</h2>
+            <p>The dedicated team overseeing the stewardship of BFI projects.</p>
+            
+            <div class="team-grid">
+                <div class="member">
+                    <img src="" alt="Head Pastor">
+                    <h4>Rev. [Name]</h4>
+                    <p>Executive Director</p>
+                </div>
+                <div class="member">
+                    <img src="" alt="Program Manager">
+                    <h4>[Name]</h4>
+                    <p>Outreach Coordinator</p>
+                </div>
+                <div class="member">
+                    <img src="" alt="Finance Officer">
+                    <h4>[Name]</h4>
+                    <p>Stewardship & Finance</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bright Futures Initiatives | A Ministry of [Insert Church Name Here]</p>
+        <p>Transparency: BFI is an IRS-compliant 501(c)(3) equivalent organization.</p>
+    </footer>
+
+</body>
+</html>

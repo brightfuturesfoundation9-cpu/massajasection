@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs | Bright Futures Initiatives</title>
+    <style>
+        /* Shared Styles */
+        :root {
+            --primary-blue: #2c3e50;
+            --accent-gold: #f1c40f;
+            --action-red: #e74c3c;
+            --soft-bg: #f8f9fa;
+        }
+
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; line-height: 1.7; color: #333; }
+        header { background-color: var(--primary-blue); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .logo { color: white; font-size: 1.4rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; }
+        .nav-links { list-style: none; display: flex; gap: 25px; margin: 0; }
+        .nav-links a { color: #ecf0f1; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent-gold); }
+        .btn-donate { background-color: var(--action-red); padding: 8px 20px; border-radius: 50px; color: white !important; }
+
+        /* Page Layout */
+        .page-header { background: var(--primary-blue); color: white; padding: 60px 20px; text-align: center; }
+        .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+
+        /* Program Section Styling */
+        .program-block {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 80px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .program-block:nth-child(even) { flex-direction: row-reverse; }
+
+        .program-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .program-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .program-info { flex: 1; }
+        .program-info h2 { color: var(--primary-blue); font-size: 2rem; margin-top: 0; }
+        .program-info .tag { 
+            background: var(--accent-gold); 
+            padding: 4px 12px; 
+            border-radius: 4px; 
+            font-size: 0.8rem; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .impact-list { list-style: none; padding: 0; margin: 20px 0; }
+        .impact-list li::before { content: "✓ "; color: var(--action-red); font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .program-block, .program-block:nth-child(even) { flex-direction: column; }
+        }
+
+        footer { background: #1a252f; color: #bdc3c7; text-align: center; padding: 30px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Bright Futures</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About BFI</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html" class="btn-donate">Donate Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Our Charitable Works</h1>
+        <p>Transforming lives through structured, sustainable initiatives.</p>
+    </section>
+
+    <div class="container">
+        
+        <div class="program-block">
+            <div class="program-image">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80" alt="Education">
+            </div>
+            <div class="program-info">
+                <span class="tag">Education</span>
+                <h2>Bright Scholars Program</h2>
+                <p>We believe education is the most powerful weapon against poverty. Our scholarship initiative supports children from primary through secondary school.</p>
+                <ul class="impact-list">
+                    <li>Full tuition fee coverage</li>
+                    <li>Provision of school uniforms and kits</li>
+                    <li>Weekend tutoring and mentorship</li>
+                </ul>
+                <a href="donate.html" style="color: var(--action-red); font-weight: bold; text-decoration: none;">Sponsor a Student &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-block">
+            <div class="program-image">
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=600&q=80" alt="Healthcare">
+            </div>
+            <div class="program-info">
+                <span class="tag">Healthcare</span>
+                <h2>Community Wellness Clinics</h2>
+                <p>Access to basic healthcare is a human right. BFI partners with Christian medical professionals to provide quarterly mobile clinics for underserved areas.</p>
+                <ul class="impact-list">
+                    <li>Free health screenings and checkups</li>
+                    <li>Maternal and child health support</li>
+                    <li>Mental health and spiritual counseling</li>
+                </ul>
+                <a href="volunteer.html" style="color: var(--action-red); font-weight: bold; text-decoration: none;">Join the Medical Team &rarr;</a>
+            </div>
+        </div>
+
+        <div class="program-block">
+            <div class="program-image">
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=600&q=80" alt="Food Aid">
+            </div>
+            <div class="program-info">
+                <span class="tag">Food Security</span>
+                <h2>Bread of Life Pantry</h2>
+                <p>Meeting immediate physical needs while nurturing the spirit. Our food pantry provides nutritional support to elderly residents and struggling families.</p>
+                <ul class="impact-list">
+                    <li>Emergency food baskets for families</li>
+                    <li>Nutritious hot meals for the homeless</li>
+                    <li>Community farming and agriculture training</li>
+                </ul>
+                <a href="donate.html" style="color: var(--action-red); font-weight: bold; text-decoration: none;">Donate Food Items &rarr;</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bright Futures Initiatives | Empowering Communities with Hope</p>
+    </footer>
+
+</body>
+</html>

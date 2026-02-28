@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bright Futures Initiatives</title>
+    <style>
+        /* Modern Foundation Theme */
+        :root {
+            --primary-blue: #2c3e50;
+            --accent-gold: #f1c40f;
+            --action-red: #e74c3c;
+            --light-gray: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--primary-blue);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .btn-donate {
+            background-color: var(--action-red);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+
+        /* Content Containers */
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: var(--primary-blue);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-header h2::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background: var(--accent-gold);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Mission & Pillars Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .pillar-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid var(--primary-blue);
+        }
+
+        /* Stats Section */
+        .stats-bar {
+            background-color: var(--light-gray);
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .stat-item h3 { font-size: 2.5rem; color: var(--action-red); margin: 0; }
+
+        /* Call to Action */
+        .cta-section {
+            background: var(--primary-blue);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer {
+            background: #1a252f;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Bright Futures</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About BFI</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html" class="btn-donate">Donate Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Faith in Action.</h1>
+        <p>Bright Futures Initiatives is dedicated to uplifting the vulnerable and empowering the next generation through Christ-centered service.</p>
+        <div>
+            <a href="programs.html" style="background:var(--accent-gold); color: #333; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-right: 15px;">Our Impact</a>
+            <a href="volunteer.html" style="border: 2px solid white; color: white; padding: 10px 28px; text-decoration: none; font-weight: bold; border-radius: 5px;">Partner With Us</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Core Pillars</h2>
+            <p>Removing obstacles so every individual can reach their divine purpose.</p>
+        </div>
+
+        <div class="grid">
+            <div class="pillar-card">
+                <h3>Education & Literacy</h3>
+                <p>We provide scholarships, school uniforms, and tutoring to children in low-income households, ensuring no child is left behind due to financial hardship.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Community Wellness</h3>
+                <p>From free medical camps to mental health counseling, we ensure our neighbors have the physical and emotional strength to build a better life.</p>
+            </div>
+            <div class="pillar-card">
+                <h3>Spiritual Guidance</h3>
+                <p>We believe true change starts from within. Our mentorship programs integrate faith-based values to build character and resilience.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats-bar">
+        <div class="container grid">
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Meals Served Monthly</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Active Scholarships</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Public Donation Transparency</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Mission</h2>
+        </div>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; font-style: italic;">
+            "Bright Futures Initiatives exists to be the hands and feet of Jesus in our community. By providing tangible support and spiritual hope, we help families break the cycle of poverty and step into a future filled with promise."
+        </p>
+    </div>
+
+    <section class="cta-section">
+        <h2>Ready to Make a Difference?</h2>
+        <p>Whether through prayer, volunteering, or financial support, your contribution changes lives.</p>
+        <br>
+        <a href="donate.html" class="btn-donate" style="padding: 15px 40px; font-size: 1.1rem;">Support Our Mission</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bright Futures Initiatives | A Ministry of [Insert Church Name Here]</p>
+        <p>123 Church Street, City, State | contact@brightfutures.org</p>
+    </footer>
+
+</body>
+</html>

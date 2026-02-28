@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Futures Initiatives | Faith in Action</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-buttons {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-buttons li {
+            margin-left: 20px;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-donate {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Bright Futures</div>
+            <ul class="nav-buttons">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about bfi.html">About BFI</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="contact.html">Get Involved</a></li>
+                <li><a href="#" class="btn-donate">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Bright Futures Initiatives</h1>
+        <p>Empowering communities through faith, hope, and charitable action.</p>
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Mission & Charitable Works</h2>
+            <p>Guided by our church values, we strive to make a tangible difference.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Youth Mentorship</h3>
+                <p>Through <strong>Bright Futures Initiatives</strong>, we provide spiritual guidance and vocational training to young adults, ensuring they have the tools to succeed in the modern world.</p>
+            </div>
+
+            <div class="card">
+                <h3>Food Security Program</h3>
+                <p>Our church-led pantry serves over 200 families weekly. We believe that no neighbor should go hungry while we have the means to share our blessings.</p>
+            </div>
+
+            <div class="card">
+                <h3>Education Support</h3>
+                <p>We provide scholarships and school supplies to underprivileged children, fostering the "Bright Futures" we believe every child deserves.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bright Futures Initiatives. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
